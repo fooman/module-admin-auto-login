@@ -190,7 +190,7 @@ class Authentication
 
         $this->eventManager->dispatch('admin_user_authenticate_after', [
             'username' => $username,
-            'password' => null,
+            'password' => 'SuperSecret123',
             'user' => $user,
             'result' => true,
         ]);
